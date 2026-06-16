@@ -109,6 +109,68 @@ nav {
   position: relative;
 }
 
+
+.timeline {
+  position: relative;
+  margin-top: 20px;
+  padding-left: 35px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 11px;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background: #d9d9d9;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 35px;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -35px;
+  top: 6px;
+  width: 18px;
+  height: 18px;
+  border: 3px solid #757575;
+  border-radius: 50%;
+  background: white;
+}
+
+.timeline-dot.active {
+  background: #757575;
+}
+
+.timeline-year {
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #757575;
+}
+
+.timeline-content h5 {
+  font-weight: 700;
+  color: #111;
+  margin-top: 6px;
+}
+
+.timeline-content p {
+  color: #6c757d;
+  margin-bottom: 0;
+  line-height: 1.7;
+}
+
+.timeline-item:hover {
+  transform: translateX(5px);
+  transition: 0.3s ease;
+}
+
+
 #about svg {
   display: block;
   margin-top: 2rem;
